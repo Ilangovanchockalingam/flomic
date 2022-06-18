@@ -1,0 +1,1447 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* @media only screen and (min-width:786px){
+
+    .navbar {
+        display: inline;
+        background-color: #8D918D;
+        height: 100vh;
+        position: fixed;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .navhome {
+        border-left: #1589FF 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navaboutus {
+        border-left: #FFDF00 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navservices {
+        border-left: #C45AEC 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navportfolio {
+        border-left: #228B22 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navcontactus {
+        border-left: #FD349C 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navhome:hover {
+        background-color: #1589FF;
+    }
+    
+    .navaboutus:hover {
+        background-color: #FFDF00;
+    }
+    
+    .navservices:hover {
+        background-color: #C45AEC;
+    }
+    
+    .navportfolio:hover {
+        background-color: #228B22;
+    }
+    
+    .navcontactus:hover {
+        background-color: #FD349C;
+    }
+    
+    .navbar img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    a:hover {
+        color: #36454F;
+    }
+    
+    a:active {
+        color: red;
+    }
+    
+    .condent {
+        margin-left: 25%;
+    }
+    
+    .slider {
+        height: 500px;
+        animation: animate 30s ease-in-out infinite;
+        background-size: cover;
+    }
+    
+    @keyframes animate {
+        0%,20% {
+            background-image: url(./images/background-01.jpg);
+        }
+        40% {
+            background-image: url(./images/background-02.jpg)
+        }
+        60% {
+            background-image: url(./images/background-03.jpg)
+        }
+        80% {
+            background-image: url(./images/background-04.jpg)
+        }
+        100% {
+            background-image: url(./images/background-05.jpg)
+        }
+    }
+    
+    .slider div {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        padding-top: 175px;
+    }
+    
+    .slider div h3 {
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .button {
+        background-color: #1589FF;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #2554C7 5px;
+    }
+    
+    .template {
+        margin: 50px;
+    }
+    
+    .welcome {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .welcometext {
+        padding-bottom: 20px;
+        color: #1589FF;
+    }
+    
+    .borderline {
+        border-top: #FFD700 solid 5px;
+    }
+    
+    .aboutus {
+        background-color: #FFDF00;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .officials div {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .officials {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .officials div h3 {
+        color: #FFD700;
+    }
+    
+    .ourmanagement {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        align-content: space-between;
+    }
+    
+    .management {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .goldcolor {
+        color: #FFD700;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline2 {
+        border-top: #A74AC7 solid 5px;
+    }
+    
+    .services {
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .servicesicons div {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        font-size: 1.25rem;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .servicesicons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .skills {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    
+    .skillname {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #C45AEC;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    
+    .skillbar {
+        height: 14px;
+        background: #D3D3D3;
+        border-radius: 3px;
+    }
+    
+    .skillpercent {
+        height: 14px;
+        background: #C45AEC;
+        border-radius: 3px;
+        position: relative;
+        animation: fillbars 5s 1;
+    }
+    
+    .skillpercent::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #C45AEC;
+        border-radius: 4px;
+        font-size: 14px;
+        top: -30px;
+        right: 0;
+        transform: translateX(50%);
+        color: white;
+    }
+    
+    .skillpercent::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #C45AEC;
+        top: -11px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+    
+    @keyframes fillbars {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    .ourskills {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-content: space-between;
+    }
+    
+    .skillsflex {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .purplecolor {
+        color: #C45AEC;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline3 {
+        border-top: #006400 solid 5px;
+    }
+    
+    .portfolio {
+        background-color: #228B22;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .greencolor {
+        color: #228B22;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    
+    .portfoliorow {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .portfoliorow div {
+        text-align: center;
+    }
+    
+    .portfoliorow div img {
+        margin-bottom: 25px;
+    }
+    
+    .portfoliocolumn {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 50px;
+    }
+    
+    .button2 {
+        background-color: #228B22;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #006400 5px;
+        margin: auto;
+    }
+    
+    .borderline4 {
+        border-top: #E30B5D solid 5px;
+    }
+    
+    .contactus {
+        background-color: #FD349C;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .maps {
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .formscolumn {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    
+    .formsrow {
+        display: grid;
+        grid-template-columns: 33.3333333% 33.33333333% 33.33333333%;
+        justify-content: space-between;
+        gap: 25px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .button3 {
+        background-color: #FD349C;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #E30B5D 5px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .footer {
+        background-color: #8D918D;
+        height: 150px;
+        border-left: #4C4646 5px solid;
+        margin-left: 2px;
+    }
+    
+    .footerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        margin: auto;
+        align-items: center;
+        height: 150px;
+    }
+    
+    .footerflex div {
+        font-size: 1.10rem;
+        margin: 10px;
+        background: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .copyright {
+        background-color: #4C4646;
+        height: 50px;
+        margin-left: 2px;
+    }
+    
+    .copyright div {
+        font-size: 1.10rem;
+        color: #8D918D;
+        text-align: center;
+        padding-top: 15px;
+    }
+} */
+
+@media only screen and (min-width:0px) and (max-width:785px) {
+
+    .navbar {
+        display: inline;
+        text-align: center;
+    }
+
+    .navbarmenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 25px;
+        position: sticky;
+        top: 0%;
+        background-color: #8D918D;
+    }
+    
+    .navhome {
+        border-left: #1589FF 8px solid;
+        background-color: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navaboutus {
+        border-left: #FFDF00 8px solid;
+        background-color: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navservices {
+        border-left: #C45AEC 8px solid;
+        background-color: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navportfolio {
+        border-left: #228B22 8px solid;
+        background-color: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navcontactus {
+        border-left: #FD349C 8px solid;
+        background-color: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navhome:hover {
+        background-color: #1589FF;
+    }
+    
+    .navaboutus:hover {
+        background-color: #FFDF00;
+    }
+    
+    .navservices:hover {
+        background-color: #C45AEC;
+    }
+    
+    .navportfolio:hover {
+        background-color: #228B22;
+    }
+    
+    .navcontactus:hover {
+        background-color: #FD349C;
+    }
+    
+    /* .navbar img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 3px;
+        padding-right: 3px;
+    } */
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        color: #36454F;
+    }
+    
+    a:active {
+        color: red;
+    }
+    
+    /* .condent {
+        /* display: block; */
+        margin-left: 25%;
+    } */
+    
+    .slider {
+        /* position: absolute;
+        width: 75%; */
+        height: 300px;
+        animation: animate 30s ease-in-out infinite;
+        background-size: cover;
+    }
+    
+    @keyframes animate {
+        0%,20% {
+            background-image: url(./images/background-01.jpg);
+        }
+        40% {
+            background-image: url(./images/background-02.jpg)
+        }
+        60% {
+            background-image: url(./images/background-03.jpg)
+        }
+        80% {
+            background-image: url(./images/background-04.jpg)
+        }
+        100% {
+            background-image: url(./images/background-05.jpg)
+        }
+    }
+    
+    .slider div {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        /* height: 500px;
+        margin-top: 185px; */
+        padding-top: 70px;
+    }
+    
+    .slider div h3 {
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .button {
+        background-color: #1589FF;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #2554C7 5px;
+    }
+    
+    .template {
+        margin: 25px;
+    }
+    
+    .welcome {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .welcometext {
+        padding-bottom: 20px;
+        color: #1589FF;
+    }
+    
+    .borderline {
+        /* border-style: solid;
+        border-color: #FFD700;
+        border-width: 5px; */
+        border-top: #FFD700 solid 5px;
+    }
+    
+    .aboutus {
+        background-color: #FFDF00;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: -1px;
+    }
+    
+    .officials div {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .officials {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        gap: 25px; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .officials > img {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .officials div h3 {
+        color: #FFD700;
+    }
+    
+    .ourmanagement {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        align-content: space-between;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .management {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-bottom: 70px;
+    }
+    
+    .goldcolor {
+        color: #FFD700;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline2 {
+        border-top: #A74AC7 solid 5px;
+    }
+    
+    .services {
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 25px;
+        margin-top: -1px;
+    }
+    
+    .servicesicons > div {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        justify-content: space-between;
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        font-size: 1.25rem;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .servicesicons {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        margin-bottom: 25px;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .skills {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    
+    .skillname {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #C45AEC;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    
+    .skillbar {
+        height: 14px;
+        background: #D3D3D3;
+        border-radius: 3px;
+    }
+    
+    .skillpercent {
+        height: 14px;
+        background: #C45AEC;
+        border-radius: 3px;
+        position: relative;
+        animation: fillbars 5s 1;
+    }
+    
+    .skillpercent::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #C45AEC;
+        border-radius: 4px;
+        font-size: 14px;
+        top: -30px;
+        right: 0;
+        transform: translateX(50%);
+        color: white;
+    }
+    
+    .skillpercent::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #C45AEC;
+        top: -11px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+    
+    @keyframes fillbars {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    .ourskills {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-content: space-between;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .skillsflex {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    
+    .purplecolor {
+        color: #C45AEC;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline3 {
+        border-top: #006400 solid 5px;
+    }
+    
+    .portfolio {
+        background-color: #228B22;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 25px;
+        margin-top: -1px;
+    }
+    
+    .greencolor {
+        color: #228B22;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    
+    /* .portfoliorow {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    } */
+    
+    .portfoliorow div {
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 15px;
+    }
+    
+    .portfoliorow div img {
+        width: 75%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    
+    .portfoliocolumn {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 25px;
+    }
+    
+    .button2 {
+        background-color: #228B22;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #006400 5px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .borderline4 {
+        border-top: #E30B5D solid 5px;
+    }
+    
+    .contactus {
+        background-color: #FD349C;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .maps {
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .formscolumn {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    /* .formsrow {
+        display: grid;
+        grid-template-columns: 33.3333333% 33.33333333% 33.33333333%;
+        justify-content: space-between;
+        gap: 25px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    } */
+    
+    .button3 {
+        background-color: #FD349C;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #E30B5D 5px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .footer {
+        background-color: #8D918D;
+        height: 100px;
+        border-left: #4C4646 5px solid;
+        margin-left: 2px;
+    }
+    
+    .footerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+        height: 100px;
+    }
+    
+    .footerflex div {
+        font-size: 1.10rem;
+        margin: 10px;
+        background: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .copyright {
+        background-color: #4C4646;
+        height: 50px;
+        margin-left: 2px;
+    }
+    
+    .copyright div {
+        font-size: 1.10rem;
+        color: #8D918D;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+@media only screen and (min-width:786px) and (max-width:2000px) {
+
+    .navbar {
+        display: inline;
+        background-color: #8D918D;
+        height: 100vh;
+        position: fixed;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .navhome {
+        border-left: #1589FF 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navaboutus {
+        border-left: #FFDF00 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navservices {
+        border-left: #C45AEC 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navportfolio {
+        border-left: #228B22 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navcontactus {
+        border-left: #FD349C 8px solid;
+        background-color: #4C4646;
+        padding: 15px;
+        color: white;
+        margin: 2px;
+    }
+    
+    .navhome:hover {
+        background-color: #1589FF;
+    }
+    
+    .navaboutus:hover {
+        background-color: #FFDF00;
+    }
+    
+    .navservices:hover {
+        background-color: #C45AEC;
+    }
+    
+    .navportfolio:hover {
+        background-color: #228B22;
+    }
+    
+    .navcontactus:hover {
+        background-color: #FD349C;
+    }
+    
+    .navbar img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    a:hover {
+        color: #36454F;
+    }
+    
+    a:active {
+        color: red;
+    }
+    
+    .condent {
+        margin-left: 25%;
+    }
+    
+    .slider {
+        height: 500px;
+        animation: animate 30s ease-in-out infinite;
+        background-size: cover;
+    }
+    
+    @keyframes animate {
+        0%,20% {
+            background-image: url(./images/background-01.jpg);
+        }
+        40% {
+            background-image: url(./images/background-02.jpg)
+        }
+        60% {
+            background-image: url(./images/background-03.jpg)
+        }
+        80% {
+            background-image: url(./images/background-04.jpg)
+        }
+        100% {
+            background-image: url(./images/background-05.jpg)
+        }
+    }
+    
+    .slider div {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        padding-top: 175px;
+    }
+    
+    .slider div h3 {
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .button {
+        background-color: #1589FF;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #2554C7 5px;
+    }
+    
+    .template {
+        margin: 50px;
+    }
+    
+    .welcome {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .welcometext {
+        padding-bottom: 20px;
+        color: #1589FF;
+    }
+    
+    .borderline {
+        border-top: #FFD700 solid 5px;
+    }
+    
+    .aboutus {
+        background-color: #FFDF00;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .officials div {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .officials {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .officials div h3 {
+        color: #FFD700;
+    }
+    
+    .ourmanagement {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        align-content: space-between;
+        text-align: left;
+        gap: 10px;
+    }
+    
+    .management {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .goldcolor {
+        color: #FFD700;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline2 {
+        border-top: #A74AC7 solid 5px;
+    }
+    
+    .services {
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .servicesicons div {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        background-color: #C45AEC;
+        color: white;
+        padding: 10px;
+        font-size: 1.25rem;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .servicesicons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    
+    .skills {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    
+    .skillname {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #C45AEC;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    
+    .skillbar {
+        height: 14px;
+        background: #D3D3D3;
+        border-radius: 3px;
+    }
+    
+    .skillpercent {
+        height: 14px;
+        background: #C45AEC;
+        border-radius: 3px;
+        position: relative;
+        animation: fillbars 5s 1;
+    }
+    
+    .skillpercent::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #C45AEC;
+        border-radius: 4px;
+        font-size: 14px;
+        top: -30px;
+        right: 0;
+        transform: translateX(50%);
+        color: white;
+    }
+    
+    .skillpercent::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #C45AEC;
+        top: -11px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+    
+    @keyframes fillbars {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    .ourskills {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-content: space-between;
+        text-align: left;
+    }
+    
+    .skillsflex {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .purplecolor {
+        color: #C45AEC;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .borderline3 {
+        border-top: #006400 solid 5px;
+    }
+    
+    .portfolio {
+        background-color: #228B22;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .greencolor {
+        color: #228B22;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    
+    .portfoliorow {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .portfoliorow div {
+        text-align: center;
+    }
+    
+    .portfoliorow div img {
+        margin-bottom: 25px;
+    }
+    
+    .portfoliocolumn {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 50px;
+    }
+    
+    .button2 {
+        background-color: #228B22;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #006400 5px;
+        margin: auto;
+    }
+    
+    .borderline4 {
+        border-top: #E30B5D solid 5px;
+    }
+    
+    .contactus {
+        background-color: #FD349C;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: -1px;
+    }
+    
+    .maps {
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .formscolumn {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    
+    .formsrow {
+        display: grid;
+        grid-template-columns: 33.3333333% 33.33333333% 33.33333333%;
+        justify-content: space-between;
+        gap: 25px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .button3 {
+        background-color: #FD349C;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        border-bottom: solid #E30B5D 5px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .footer {
+        background-color: #8D918D;
+        height: 150px;
+        border-left: #4C4646 5px solid;
+        margin-left: 2px;
+    }
+    
+    .footerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        margin: auto;
+        align-items: center;
+        height: 150px;
+    }
+    
+    .footerflex div {
+        font-size: 1.10rem;
+        margin: 10px;
+        background: #4C4646;
+        padding: 10px;
+        color: white;
+    }
+    
+    .copyright {
+        background-color: #4C4646;
+        height: 50px;
+        margin-left: 2px;
+    }
+    
+    .copyright div {
+        font-size: 1.10rem;
+        color: #8D918D;
+        text-align: center;
+        padding-top: 15px;
+    }
+}
